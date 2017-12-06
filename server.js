@@ -24,6 +24,9 @@ app.engine("handlebars", exphbs({
 }));
 app.set("view engine", "handlebars");
 
+var routes = require("./controllers/routes.js");
+app.use("/", routes);
+
 var PORT = process.env.PORT || 8080;
 
 // Starts the server to begin listening
