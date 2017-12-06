@@ -1,6 +1,6 @@
 // Methods required to modify ORM while using burgers_db
 
-var orm = require("../config.orm.js");
+var orm = require("../config/orm.js");
 
 var burger = {
 	all:function(callback) {
